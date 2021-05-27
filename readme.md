@@ -1,5 +1,5 @@
 # DP-Library后端部分
-## 基于Vue3.0+Eelement-Plus+FastAPI+MongoDB的前后端分离的图书管理的项目「后端部分」
+## 基于Vue3.0+Eelement-Plus+FastAPI+MongoDB的前后端分离的图书管理项目「后端部分」
 ## 开发环境
  - 推荐 VS Code [下载传送门🚪](https://www.runoob.com/python3/python3-install.html)
 ## 开发环境配置「插件推荐」
@@ -11,7 +11,7 @@
  - ![image.png](https://tva1.sinaimg.cn/large/007e6d0Xgy1gqx3bw7p9yj60b80240sq02.jpg)
 ## 运行环境
  - python 3.8.5
- - mongodb「需要新建名为NFTGO的数据库」
+ - mongodb「需要新建名为DPLibrary的数据库」
 ## 从零开始
  - 安装Python [下载传送门🚪](https://www.runoob.com/python3/python3-install.html)
  - 命令行「VS code内终端」运行`python -V`，出现版本号「如下图」则可以进行下一步
