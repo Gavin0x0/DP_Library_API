@@ -23,11 +23,17 @@
  - pip配置镜像 [配置传送门🚪](https://www.cnblogs.com/jimlau/p/13155747.html)
 ## 将本项目clone到本地
  - 不会用git也可以直接下载压缩包
+ - ![image.png](https://tva1.sinaimg.cn/large/007e6d0Xgy1gqx3mgdtf1j30pj09mgmp.jpg)
+## 用VS code打开项目文件夹
+ - ‼️ 重要，确保正确打开项目
+ - VS code是以文件夹作为项目的，打开错层级就不能启动项目
 ## 安装依赖
+VS code内终端输入
 ```
 pip install -r requirements.txt
 ```
 ## 启动方式
+VS code内终端输入
 ```
 python run.py
 ```
