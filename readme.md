@@ -1,5 +1,5 @@
 # DP-Library后端部分
-## 基于Vue3.0+Eelement-Plus+FastAPI+MongoDB的前后端分离的图书管理的项目「后端部分」
+## 基于Vue3.0+Eelement-Plus+FastAPI+MongoDB的前后端分离的图书管理项目「后端部分」
 ## 开发环境
  - 推荐 VS Code [下载传送门🚪](https://www.runoob.com/python3/python3-install.html)
 ## 开发环境配置「插件推荐」
