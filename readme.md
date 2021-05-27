@@ -63,3 +63,21 @@ python run.py
  - FastAPI会自动生成接口文档，可以直接测试接口，这个功能绝了👍
  - 进入方式：在启动的地址后面加上 `/docs`
  - ![image.png](https://tva1.sinaimg.cn/large/007e6d0Xgy1gqw3fkgh1gj60p10fl0tt02.jpg)
+
+## 更多资料
+### 接口权鉴方面
+ - [「关于OAuth2」](https://www.ruanyifeng.com/blog/2019/04/oauth-grant-types.html)
+ - [「关于Bearer Token」](https://www.jianshu.com/p/8f7009456abc)
+ - [「官方文档中OAuth2的实现」](https://fastapi.tiangolo.com/zh/tutorial/security/simple-oauth2/)
+ - [「网友在FastAPI中OAuth2的实现」](https://github.com/MarkShawn2020/oauth2-py)
+
+### 数据库设计方面
+ - [「范式与反范式」](https://blog.csdn.net/lein_wang/article/details/53064791)
+ - [「MongoDB模式设计」](https://mongoing.com/mongodb-advanced-pattern-design)
+ - [关系模型和文档模型的区别在哪里?](https://mongoing.com/mongodb-advanced-pattern-design)  
+关系模型需要你把一个数据对象，拆分成零部件，然后存到各个相应的表里，需要的是最后把它拼起来。举例子来说，假设我们要做一个CRM应用，那么要管理客户的基本信息，包括客户名字、地址、电话等。由于每个客户可能有多个电话，那么按照第三范式，我们会把电话号码用单独的一个表来存储，并在显示客户信息的时候通过关联把需要的信息取回来。
+而MongoDB的文档模式，与这个模式大不相同。由于我们的存储单位是一个文档，可以支持数组和嵌套文档，所以很多时候你直接用一个这样的文档就可以涵盖这个客户相关的所有个人信息。关系型数据库的关联功能不一定就是它的优势，而是它能够工作的必要条件。 而在MongoDB里面，利用富文档的性质，很多时候，关联是个伪需求，可以通过合理建模来避免做关联。
+
+## 开发规范
+ - 接口说明要写清楚
+ - 各接口需要层级分明，满足高内聚、低耦合的要求
