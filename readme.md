@@ -19,7 +19,14 @@
  - 检查pip是否正常可用，运行`pip -V`，出现版本号「如下图」则可以进行下一步
  - ![image.png](https://tva1.sinaimg.cn/large/007e6d0Xgy1gqx3gu06x2j60fg0433yn02.jpg)
  - 如果没有pip自行百度安装，直接用anaconda也可以
-## 配置镜像
+ - 安装MongoDB数据库 [安装教程传送门🚪](https://www.runoob.com/mongodb/mongodb-window-install.html)
+ - 安装Navicat数据库可视化管理工具「非必须」
+## 配置数据库
+ - 用Navicat连接到本地的MongoDB
+ - 创建名为 「DPLibrary」的数据库
+ - ![image.png](https://tva1.sinaimg.cn/large/007e6d0Xgy1gqx4322c1xj60hx051gm902.jpg)
+ - 数据库内创建一个集合Collection，使得数据库生效
+## 配置pip镜像
  - pip配置镜像 [配置传送门🚪](https://www.cnblogs.com/jimlau/p/13155747.html)
 ## 将本项目clone到本地
  - 不会用git也可以直接下载压缩包
@@ -28,15 +35,25 @@
  - ‼️ 重要，确保正确打开项目
  - VS code是以文件夹作为项目的，打开错层级就不能启动项目
 ## 安装依赖
-VS code内终端输入
+ - VS code内终端输入
 ```
 pip install -r requirements.txt
 ```
+## 检查数据库连通性
+ - VS code内终端输入
+```
+python dbtest.py
+```
+ - 输出的数据库里面包含有刚刚创建的 `DPLibrary` 就可以
+ - ![image.png](https://tva1.sinaimg.cn/large/007e6d0Xgy1gqx44zwdwdj60ez032jri02.jpg)
 ## 启动方式
-VS code内终端输入
+ - VS code内终端输入
 ```
 python run.py
 ```
+ - 如下图则后端启动成功
+ - ![image.png](https://tva1.sinaimg.cn/large/007e6d0Xgy1gqx3v5zkkdj60gt05x3z302.jpg)
+## That's ALL 🎉
 ## 简要说明
  - `main.py` 主要代码文件，API接口都写在里面「目前」
  - `models.py` 实体类模型，因为MongoDB的数据结构，需要为其定制特殊的实体类「说实话还没搞太懂」
